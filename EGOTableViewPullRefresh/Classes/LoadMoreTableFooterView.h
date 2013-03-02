@@ -33,7 +33,6 @@
 @protocol LoadMoreTableFooterDelegate;
 @interface LoadMoreTableFooterView : UIView {
 	
-	id _delegate;
 	EGOPullState _state;
     
 	UILabel *_statusLabel;
@@ -56,6 +55,6 @@
 
 @end
 
-@protocol LoadMoreTableFooterDelegate
+@protocol LoadMoreTableFooterDelegate <NSObject>
 - (void)loadMoreTableFooterDidTriggerLoadMore:(LoadMoreTableFooterView*)view;
 @end

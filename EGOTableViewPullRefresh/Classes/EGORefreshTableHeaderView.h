@@ -47,7 +47,6 @@ typedef enum{
 @protocol EGORefreshTableHeaderDelegate;
 @interface EGORefreshTableHeaderView : UIView {
 	
-	id _delegate;
 	EGOPullState _state;
     
 	UILabel *_lastUpdatedLabel;
@@ -73,7 +72,7 @@ typedef enum{
 
 @end
 
-@protocol EGORefreshTableHeaderDelegate
+@protocol EGORefreshTableHeaderDelegate <NSObject>
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view;
 @optional
 - (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view;

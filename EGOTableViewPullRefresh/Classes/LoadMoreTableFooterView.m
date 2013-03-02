@@ -35,7 +35,7 @@
 
 @implementation LoadMoreTableFooterView
 
-@synthesize delegate=_delegate;
+@synthesize delegate = _delegate;
 
 
 - (id)initWithFrame:(CGRect)frame {

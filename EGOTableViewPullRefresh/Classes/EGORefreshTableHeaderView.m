@@ -33,7 +33,7 @@
 
 @implementation EGORefreshTableHeaderView
 
-@synthesize delegate=_delegate;
+@synthesize delegate = _delegate;
 
 
 - (id)initWithFrame:(CGRect)frame {

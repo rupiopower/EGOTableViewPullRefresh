@@ -29,8 +29,8 @@
 #import "MessageInterceptor.h"
 
 @implementation MessageInterceptor
-@synthesize receiver;
-@synthesize middleMan;
+@synthesize receiver = _receiver;
+@synthesize middleMan = _middleMan;
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     if ([middleMan respondsToSelector:aSelector]) { return middleMan; }
